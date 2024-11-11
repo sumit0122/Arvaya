@@ -158,7 +158,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  /* max-height: 36px; */
+  max-height: 60px;
+
   margin-right: 8px;
 }
 
@@ -720,7 +722,9 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  /* padding: 60px 0; */
+  padding: 50px 0;
+
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -743,13 +747,18 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+
+  font-size: 26px;
+  /* font-size: 32px; */
+
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 14px !important;
 }
 
 /*--------------------------------------------------------------
@@ -759,7 +768,7 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
 }
@@ -901,6 +910,8 @@ section,
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Feature Details Section
 --------------------------------------------------------------*/
@@ -947,6 +958,11 @@ section,
 .feature-details .features-item p:last-child {
   margin-bottom: 0;
 }
+
+/* .change-li i {
+  color: white
+
+} */
 
 /*--------------------------------------------------------------
 # Gallery Section
@@ -1327,6 +1343,7 @@ section,
   visibility: visible;
   opacity: 1;
   padding-top: 10px;
+  font-size: 13px;
 }
 
 .faq .faq-container .faq-active .faq-toggle {
@@ -1413,8 +1430,8 @@ section,
 
 
 .single-feature {
-	margin-bottom: 80px;
-	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .single-feature h5 {
 	font-size: 16px;
@@ -1580,7 +1597,7 @@ section,
 .features .nav-link:hover,
 .features .nav-link.active {
   transition: 0.3s;
-  background-image: linear-gradient(#4a90e2, #50a7f3); /* New gradient with blue tones */
+  background-image: linear-gradient(#aed6f1, #6ba0c3); /* New gradient with blue tones */
   color: var(--contrast-color) !important;
   border-color: var(--accent-color); /* Border color matches the accent color */
 }
@@ -1605,22 +1622,24 @@ section,
 
 .features .tab-pane h3 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 18px;
 }
 
 .features .tab-pane ul {
+  
   list-style: none;
   padding: 0;
 }
 
 .features .tab-pane ul li {
+  font-size: 15px !important;
   padding-bottom: 10px;
 }
 
 .features .tab-pane ul i {
-  font-size: 24px;
+ 
   margin-right: 4px;
-  color: var(--primary_color);
+  color: var(--accent-color);
 }
 
 .features .tab-pane p:last-child {
@@ -1721,8 +1740,36 @@ section,
   padding-right: 40px;
 }
 
+.myClass{
 
+  padding: 0px 15px;
+
+}
+
+/* @media (max-width: 1000px) {
+
+  .myClass{
+
+    padding: 0px 155px;
+  
+  }
+
+} */
+
+.myClass{
+
+  padding: 0px 155px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .myClass {
+    padding: 0; 
+  }
+}
 @media (max-width: 1700px) {
+
+  
 
   .faq-area .faq-inner .section-title {
     font-size: 45px;
@@ -1739,3 +1786,142 @@ section,
 .btn btn-link{
   font-size: 16px;
 }
+
+
+/* Make h5 bold */
+.feature h5 {
+  font-weight: bold;
+}
+
+/* Change h5 and p text color to dark blue on hover */
+.single-feature:hover h5,
+.single-feature:hover p {
+  color: #5777ba; /* Dark blue */
+  cursor:default;
+}
+
+.single-feature{
+  box-shadow:  0 0 45px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 15px;
+    padding: 11px;
+}
+
+
+.footer-contact:hover p,
+.social-links:hover p {
+  color:
+  color-mix(in srgb, var(--accent-color) 90%, black 50%);
+  cursor:default;
+}
+
+
+.feature-mobile img {
+  width: 100%; /* Ensures it scales with the container width */
+  height: auto;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features .features-item {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.features .features-item+.features-item {
+  margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+  .features .features-item+.features-item {
+    margin-top: 40px;
+  }
+}
+
+.features .features-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.features .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .features-item ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.features .features-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.features .features-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Image styling */
+.fixed-height-img {
+  height: 300px; /* Set the fixed height */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  width: 100%; /* Make the image adapt to the container width */
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Paragraph background and border radius */
+.feature-text {
+  background-color: #f0f0f0; /* Grey background */
+  padding: 20px; /* Padding for content inside the paragraph */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 10px 0 0 0;
+  display: flex;
+}
+
+.about .content ul i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+

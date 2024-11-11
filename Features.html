@@ -63,7 +63,7 @@
           <li><a href="#faq">F.A.Q</a></li> -->
           <li style="cursor: pointer;"><a href="index.html"   >Home</a></li>
           <li style="cursor: pointer;"><a  href="About.html" >About Us</a></li>
-          <li style="cursor: pointer;"><a  href="Features.html" >Features</a></li>
+          <li style="cursor: pointer;"><a  class="active" href="Features.html" >Features</a></li>
           <!-- <li style="cursor: pointer;"><a  >Gallery</a></li>
           <li style="cursor: pointer;"><a  >Pricing</a></li>
           <li style="cursor: pointer;"><a >F.A.Q</a></li>
@@ -84,7 +84,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> -->
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a  href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -96,119 +96,105 @@
 
   <main class="main">
 
+<!-- Features Section -->
+<section id="features" class="features section" style="color: var(--default-color); background-color: var(--background-color); padding: 1px 0; scroll-margin-top: 98px; overflow: clip;">
 
-<!-- Contact Section -->
-<section id="contact" class="contact section">
-
-  <!-- Section Title -->
+  <!-- Features Section Title -->
   <!-- <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Get in touch with us for inquiries, support, or partnership opportunities in Pune and beyond.</p>
+      <h2>Features</h2>
   </div> -->
-  <!-- Section Title -->
+<!-- Section Title -->
 <div class="container section-title" data-aos="fade-up" style="text-align: center; padding: 50px 0;">
   <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
     <hr style="flex: 1; border: 0; border-top: 2px solid #007bff; margin-right: 15px;">
-    <h2 style="font-size: 30px; font-weight: 700; color: #2d2d2d; margin: 0;">Contact</h2>
+    <h2 style="font-size: 30px; font-weight: 700; color: #2d2d2d; margin: 0;">Features</h2>
     <hr style="flex: 1; border: 0; border-top: 2px solid #007bff; margin-left: 15px;">
   </div>
-  <p style="font-size: 1.2rem; color: #555; line-height: 1.6; max-width: 800px; margin: 0 auto;">
-    Get in touch with us for inquiries, support, or partnership opportunities 
-  </p>
 </div><!-- End Section Title -->
 
-  <!-- End Section Title -->
+  <div class="container">
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-6">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <!-- <p>1st Floor, College Corner, Kumar Plaza</p>
-              <p>Opp. N. D. Law College, North Shivaji Nagar</p> -->
-              <p>Sangli, Maharashtra 416416</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+91 098909 41239</p>
-              <!-- <p>+91 98765 43210</p> -->
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@uvtechsoft.com</p>
-              <p>&nbsp;</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="500">
-              <i class="bi bi-clock"></i>
-              <h3>Open Hours</h3>
-              <p>Monday - Friday</p>
-              <p>09:30 AM - 6:30 PM</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-6">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
+      <!-- Feature 1: Personal Profiling -->
+      <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+              <img src="assets/img/personal profiling1.jpeg" class="img-fluid fixed-height-img" alt="">
           </div>
-        </form>
-      </div><!-- End Contact Form -->
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+              <h3>Personal Health Profiling</h3>
+              <p style="font-size: 14px;" class="fst-italic">
+                  Arvaya’s Personal Profiling enables users to create secure profiles to manage and update personal health metrics, including medical records, lab reports, prescriptions, and lifestyle data. Users can log in effortlessly and track both their health and that of family members under one account, allowing for streamlined health monitoring across loved ones. This feature helps organize all health information in one place for easy access and management, promoting proactive and holistic care.
+              </p>
+              <ul style="font-size: 14px;">
+                  <li><i class="bi bi-check"></i><span> <b>Secure Profiles</b> : Effortlessly manage and update health metrics.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Family Health Tracking</b> : Track health for multiple family members.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Holistic Care</b> : Organize health data for proactive care.</span></li>
+              </ul>
+          </div>
+      </div><!-- Features Item -->
 
-    </div>
+      <!-- Feature 2: Doctor-Patient Interaction -->
+      <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+              <img src="assets/img/Clinic mgt.jpg" class="img-fluid fixed-height-img" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+              <h3>Doctor-Patient Interaction</h3>
+              <p style="font-size: 14px;" class="fst-italic">
+                  The Arvaya app streamlines doctor-patient interactions with an efficient Appointment Scheduling system, allowing doctors to manage available slots and update their availability seamlessly. Consultation Record Management enables doctors to create, view, and update patient consultation records, including prescriptions and follow-up notes. Doctors can securely access comprehensive patient profiles and medical histories during consultations for accurate decision-making.
+              </p>
+              <ul style="font-size: 14px;">
+                  <li><i class="bi bi-check"></i><span> <b>Appointment Scheduling</b> : Seamlessly manage doctor availability.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Consultation Records</b> : Create, update, and view patient records.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Informed Decision-Making</b> : Access comprehensive medical histories.</span></li>
+              </ul>
+          </div>
+      </div><!-- Features Item -->
 
-  </div>
+      <!-- Feature 3: Test Management -->
+      <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/Pathology.jpg" class="img-fluid fixed-height-img" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="300">
+              <h3>Test Management</h3>
+              <p style="font-size: 14px;" class="fst-italic">
+                  The Arvaya app offers robust Test Management features, enabling lab assistants to efficiently manage both independent and packaged tests, including scheduling, sample collection, and report generation. The Patient Management system tracks test requests, results, and follow-up actions, ensuring seamless care continuity. Our advanced Reporting System allows secure generation and sharing of lab reports with patients and healthcare providers.
+              </p>
+              <ul style="font-size: 14px;">
+                  <li><i class="bi bi-check"></i><span> <b>Efficient Test Scheduling</b> : Manage both independent and packaged tests.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Seamless Care Continuity</b> : Track test requests and follow-ups.</span></li>
+                  <li><i class="bi bi-check"></i><span> <b>Secure Reporting</b> : Generate and share lab reports securely.</span></li>
+              </ul>
+          </div>
+      </div><!-- Features Item -->
 
-</section><!-- /Contact Section -->
+
+          <!-- Feature 2: Doctor-Patient Interaction -->
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/pharmacise.png" class="img-fluid fixed-height-img" alt="">
+            </div>
+            <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+              <h3>Drug Inventory Management</h3>
+              <p style="font-size: 14px;" >
+                  The Arvaya app offers comprehensive Drug Inventory Management, empowering pharmacists to track stock levels, reorder medications, and monitor expiry dates to ensure timely availability. The Order Management feature streamlines patient medication orders and manages incoming supply orders from suppliers, enhancing operational efficiency. Pharmacists can access patient profiles, medication histories, and consultation records through the Patient Management system, ensuring safe and informed dispensing. Prescription Processing capabilities include receiving, validating, and dispensing prescriptions with built-in alerts for potential drug interactions or allergies, promoting patient safety. These features make Arvaya an essential tool for modern pharmacy management.
+              </p>
+            </div>
+        </div><!-- Features Item -->
+
+  <!-- Features Item -->
+
+  </div><!-- /Container -->
+
+</section><!-- /Features Section -->
+
+
+
 
 
   </main>
 
-  <footer id="footer" class="footer" style="    background-image: url(/assets/img/home_bg_.png); background-repeat: repeat;object-fit: cover; ">
+  <footer id="footer" class="footer" style="    background-image: url(/assets/img/home_bg_.png); background-repeat: repeat;object-fit: cover; margin-top: 50px; ">
 
     <!-- <div class="footer-newsletter">
       <div class="container">
@@ -237,7 +223,7 @@
             <p>1st Floor, College Corner, Kumar Plaza</p>
             <p>Opp. N. D. Law College, North Shivaji Nagar</p>
             <p>Sangli, Maharashtra 416416</p>
-            <p class="mt-3"><strong>Hours:</strong> <span>Open 09:30 Closes 6:30 pm</span></p>
+            <p style="font-size: 14px;" class="mt-3"><strong>Hours:</strong> <span>Open 09:30 Closes 6:30 pm</span></p>
             <p><strong>Phone:</strong> <span>098909 41239</span></p>
             <p><strong>Email:</strong> <span>info@uvtechsoft.com</span></p>
           </div>
@@ -246,7 +232,7 @@
 
         <div class="col-lg-2 col-md-3 footer-links">
           <!-- <h4>Useful Links</h4>
-          <ul>
+          <ul style="font-size: 14px;">
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
