@@ -723,7 +723,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   /* padding: 60px 0; */
-  padding: 50px 0;
+  padding: 20px 0;
 
   scroll-margin-top: 90px;
   overflow: clip;
@@ -768,7 +768,7 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
-  padding: 80px 0 60px 0;
+  padding: 60px 0 40px 0;
   display: flex;
   align-items: center;
 }
@@ -1272,7 +1272,7 @@ section,
 
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   margin: 0 30px 0 32px;
   transition: 0.3s;
@@ -1423,9 +1423,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 
 
@@ -1442,8 +1439,7 @@ section,
 .single-feature p {
 	font-size: 13px;
 }
-.icon-border {
-}
+
 .icon-border span {
 	display: block;
 	position: relative;
@@ -1585,7 +1581,7 @@ section,
 }
 
 .features .nav-link h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 10px 0 0 0;
 }
@@ -1622,7 +1618,7 @@ section,
 
 .features .tab-pane h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .features .tab-pane ul {
@@ -1832,12 +1828,18 @@ section,
 }
 
 .features .features-item+.features-item {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 @media (max-width: 640px) {
   .features .features-item+.features-item {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .call-to-action .container {
+    padding: 62px;
   }
 }
 
@@ -1924,4 +1926,10 @@ section,
   top: calc(50% - 47px);
 }
 
+
+.feature-content h5{
+
+  font-size: 16px;
+  font-weight: bold;
+}
 
