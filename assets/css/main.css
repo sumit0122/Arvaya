@@ -235,7 +235,7 @@ h6 {
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1882,7 +1882,7 @@ section,
 
 /* Image styling */
 .fixed-height-img {
-  height: 300px; /* Set the fixed height */
+  /* height: 300px; */
   object-fit: cover; /* Ensure the image maintains its aspect ratio */
   width: 100%; /* Make the image adapt to the container width */
   border-radius: 10px; /* Optional: Adds rounded corners to the image */
